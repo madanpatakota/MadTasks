@@ -1,6 +1,20 @@
-{{title}}
+<!-- <app-parent-one [inputAddress]="Address" (outputLocation)="MyLocation($event)">
+<div>
+    <input type='text' [(ngModel)]="SecondUserName" class='form-control' placeholder="Enter Second User name">
+
+    <input type='text' class='form-control' placeholder="Enter Second User name">
+  </div>
+</app-parent-one> -->
 
 
-<input type="text" class="form-control">
+<app-parent-two [CollegeName]="CName" [CollegeAddress]="CAddress">
+  <div #CommentsCollege>
 
-<app-customers></app-customers>
+    <!-- checked - means - Update -->
+    <!-- ngAfterContentChecked is Fired when u tried to change the ngModel-->
+    <input type='text' [(ngModel)]="CommentsOnCollege" class='form-control' placeholder="Enter Comments">
+  </div>
+
+  <button class="btn btn-primary" (click)="CollegeInformation(CommentsOnCollege)">Click</button>
+</app-parent-two>
+{{CName}} -- {{CAddress}}

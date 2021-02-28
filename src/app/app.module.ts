@@ -1,19 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http';
-
+import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { CustomersComponent } from './customers/customers.component';
+import { ParentOneComponent } from './parent-one/parent-one.component';
+import { ParentTwoComponent } from './parent-two/parent-two.component';
+import { ChildOneComponent } from './child-one/child-one.component';
+import { ChildTwoComponent } from './child-two/child-two.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomersComponent
+    ParentOneComponent,
+    ParentTwoComponent,
+    ChildOneComponent,
+    ChildTwoComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

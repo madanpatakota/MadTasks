@@ -1,0 +1,11 @@
+<!-- Life cycle Hooks wo't be support incase html is not identifed by angular attributes or properties or events -->
+
+<div class="container">
+    <input type='text'  [(ngModel)]="Address"  class='form-control' placeholder="Enter name">
+    <input type='text'  class='form-control' placeholder="Enter ZipCode">
+    <input type='text' [(ngModel)]="FormLocation"  class='form-control' placeholder="Form Location">
+    <hr>
+    <ng-content></ng-content>
+</div>
+
+<!-- {{UserName}} -->
