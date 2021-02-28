@@ -1,0 +1,30 @@
+<div class="container" style="margin-top: 30px;">
+
+    <form>
+       <ng-container #emailPwd></ng-container>
+       <!-- <ng-container #emailPwd></ng-container> -->
+
+       <ng-container #HostAddressContainer></ng-container>
+       
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>AndhraPradesh</option>
+                    <option>Karnataka</option>
+
+                </select>
+            </div>
+            
+            <ng-container #HostZipcontainer></ng-container>
+
+        </div>
+       <ng-content select=".contentCheck"></ng-content>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+</div>

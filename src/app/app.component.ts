@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MadTasks';
+  title = 'AngDemmos';
+  UserName = "Madan";
+
+
+   GetModel(userNameModel){
+        console.log(userNameModel);
+  }
+
+
 }
