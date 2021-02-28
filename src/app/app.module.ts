@@ -11,7 +11,6 @@ import { CompanyComponent } from './company/company.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildOneComponent } from './child-one/child-one.component';
 import { ChildTwoComponent } from './child-two/child-two.component';
-// import { SubScribesComponent } from './sub-scribes/sub-scribes.component';
 
 @NgModule({
   declarations: [

@@ -19,12 +19,10 @@ export class ChildTwoComponent implements OnInit, AfterViewInit {
 
   contentOne = "<div><p>ContentChild has appeared </p></div>"
 
-  @ViewChild('childTwoContainer', { read: ViewContainerRef }) 
-  vchildTwoContainer: ViewContainerRef;
+  @ViewChild('childTwoContainer', { read: ViewContainerRef }) vchildTwoContainer: ViewContainerRef;
   @ContentChild(TemplateRef) childContent
 
-  constructor(private resolver: ComponentFactoryResolver, 
-    private injector: Injector, @Inject(DOCUMENT) private document: Document) { }
+  constructor(private resolver: ComponentFactoryResolver, private injector: Injector, @Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit(): void {
 
@@ -56,8 +54,7 @@ export class ChildTwoComponent implements OnInit, AfterViewInit {
 	  
 	  //============================================creating instance of component==========================================
 	  //this.dynamicInsert.clear();
-    //    const dyynamicComponent = 
-      //<DynamicComponent>this.dynamicInsert.createComponent(componentFactory).instance;
+	  //    const dyynamicComponent = <DynamicComponent>this.dynamicInsert.createComponent(componentFactory).instance;
        // dyynamicComponent.someProp = 'Hello World';
 
       //===============================Case 2 ============================================
